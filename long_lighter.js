@@ -121,6 +121,7 @@
 
         for (let attempt = 1; attempt <= config.maxRetries; attempt++) {
             try {
+                debugger;
                 await openFunction();
                 currentPosition = positionType;
                 return true;
